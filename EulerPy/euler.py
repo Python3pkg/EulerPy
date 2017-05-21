@@ -189,7 +189,7 @@ def verify_all(num):
         click.echo()
 
     # Print overview of the status of each problem
-    legend = ', '.join('{} = {}'.format(v, k) for k, v in status.items())
+    legend = ', '.join('{} = {}'.format(v, k) for k, v in list(status.items()))
 
     click.echo('-' * 63)
     click.echo(legend + '\n')
